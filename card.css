@@ -1,0 +1,69 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  height: 300vh; /* Enable scrolling */
+  background: linear-gradient(135deg, #EB3678, #6A42C2);
+  font-family: 'Times New Roman', serif;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Container */
+.card-container {
+  position: fixed; /* Keeps this container fixed at the center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+/* Individual Card */
+.card {
+  position: absolute; /* Stack cards on top of each other */
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  background: linear-gradient(135deg, #EB3678, #6A42C2);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align to the start of the container */
+  align-items: center;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+  height: 100px;
+  width: 80%;
+  background: rgba(157, 21, 21, 0.5);
+  border-radius: 5px;
+  margin-bottom: 8px; /* Ensure there's space below */
+}
+
+/* Text Placeholder */
+.text-placeholder {
+  height: 50px;
+  background: rgba(156, 19, 19, 0.7);
+  border-radius: 5px;
+  margin: 8px 0;
+  width: 50%; /* Ensure text placeholders take full width */
+}
+
+.text-placeholder.large {
+  width: 10%;
+  border-radius: 50%; /* Large text placeholder width */
+}
+
+.text-placeholder.small {
+  width: 40%;
+  height: 10px; /* Small text placeholder height */
+}
